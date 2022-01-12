@@ -23,7 +23,7 @@ async function create(data){
 }
     
 async function update(data){
-    await axios.put("http://localhost:8080/datasepatu/toko", sepatu)
+    await axios.put("http://localhost:8080/datasepatu/toko", data)
     .then((result) => {
         console.log(result)
         return result.data
@@ -33,7 +33,7 @@ async function update(data){
 }
 
 async function del(data){
-    await axios.delete("http://localhost:8080/datasepatu/toko", sepatu)
+    await axios.delete("http://localhost:8080/datasepatu/toko", data)
     .then((result) => {
         console.log(result)
         return result.data
