@@ -4,6 +4,10 @@
 
 .g-signin2
 {
-    position: absolute;
+
     margin-top: 5px;
+    position: sticky;
+    margin-left: 155px;
+    
 }
+
