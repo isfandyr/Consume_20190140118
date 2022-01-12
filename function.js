@@ -4,7 +4,7 @@ function getAll(){
     return m
 }
 function getbyID(data){
-    await axios.get("http://localhost:8080/datasepatu/toko/{id}", data)
+    await axios.get("http://localhost:8080/datasepatu/toko/{idproduk}", data)
     .then((result) => {
         console.log(result)
         return result.data
@@ -23,7 +23,7 @@ async function create(data){
 }
     
 async function update(data){
-    await axios.put("http://localhost:8080/datasepatu/toko", mobil)
+    await axios.put("http://localhost:8080/datasepatu/toko", sepatu)
     .then((result) => {
         console.log(result)
         return result.data
@@ -33,7 +33,7 @@ async function update(data){
 }
 
 async function del(data){
-    await axios.delete("http://localhost:8080/datasepatu/toko", mobil)
+    await axios.delete("http://localhost:8080/datasepatu/toko", sepatu)
     .then((result) => {
         console.log(result)
         return result.data
